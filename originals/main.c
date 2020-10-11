@@ -16,6 +16,7 @@ int main (void)
 	
 	printf ("Choose the type of number organization [array/matrix]: ");
 	scanf ("%s", type);
+	if (strcmp (type, "array") && strcmp (type, "matrix")) exit (271);
 	
 	if (!strcmp (type, "array"))
 	{
